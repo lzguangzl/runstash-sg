@@ -36,7 +36,7 @@ Cloud Functions is a hosted, private, and scalable Node.js environment where you
 
 ## Pre-requisites
 
-To learn how to get started with Cloud Functions for Firebase by having a look at our [Getting Started Guide](https://firebase.google.com/docs/functions/get-started), trying the [quickstart samples](https://firebase.google.com/docs/firestore/quickstart) and looking at [the documentation](https://firebase.google.com/docs/functions).
+To learn how to get started with Cloud Functions for Firebase by having a look at their [Getting Started Guide](https://firebase.google.com/docs/functions/get-started), and looking at [The Documentation](https://firebase.google.com/docs/functions).
 
 ## Setting up the project
 
