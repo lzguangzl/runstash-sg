@@ -19,8 +19,8 @@ Firebase Develop
 
 Language
 
-- Javascript
-- NodeJS
+- JavaScript
+- Node.js
 
 Dependencies
 
@@ -66,5 +66,6 @@ iii. Paste the firebaseConfig data into config.js and export it out
 
 ## Deploy and test
 
+- dbschema.js provides the understanding for data samples used
 - Start serving your project locally using `firebase serve`
 - Deploy your project using `firebase deploy`

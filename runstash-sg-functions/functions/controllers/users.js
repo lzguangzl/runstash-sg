@@ -9,7 +9,7 @@ const { reduceUserDetails } = require("../util/validators");
 let imageFileName;
 let imageToBeUploaded = {};
 
-// Add User Details
+// Add user details
 const addUserDetails = (req, res) => {
   let userDetails = reduceUserDetails(req.body);
 
@@ -24,7 +24,7 @@ const addUserDetails = (req, res) => {
     });
 };
 
-// Get Own user Details
+// Get own user details
 const getAuthenticatedUser = (req, res) => {
   let userData = {};
   db.doc(`/users/${req.user.username}`)
@@ -109,7 +109,7 @@ const getUserDetails = (req, res) => {
     });
 };
 
-// Upload a User Image
+// Upload a user image
 const uploadImage = (req, res) => {
   const busboy = new BusBoy({ headers: req.headers });
   busboy.on("file", (fieldname, file, filename, encoding, mimetype) => {

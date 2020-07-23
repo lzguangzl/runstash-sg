@@ -2,42 +2,53 @@
 let db = {
   users: [
     {
-      userId: "",
-      email: "",
-      username: "",
-      createdAt: "",
-      imageUrl: "",
-      bio: "",
-      website: "",
-      location: "",
+      userId: "ckZoFA5nyhSDkeT55ZktIRpmkPs1",
+      email: "user@gmail.com",
+      username: "user",
+      createdAt: "2020-07-16T08:36:55.599Z",
+      imageUrl:
+        "https://firebasestorage.googleapis.com/v0/b/runstash-sg.appspot.com/o/4529455752.png?alt=media",
+      bio: "Hello I am user",
+      website: "http://user2.com.sg",
+      location: "Los Angeles, CA",
     },
   ],
   profiles: [
     {
-      name: "Andrew",
+      name: "user",
       date: "2020-07-15T10:05:17.245Z",
       distance: 3,
       createdAt: "2020-07-15T10:05:17.245Z",
       likeCount: 5,
       commentCount: 2,
+      userImage:
+        "https://firebasestorage.googleapis.com/v0/b/runstash-sg.appspot.com/o/4529455752.png?alt=media",
     },
   ],
   comments: [
     {
-      username: "",
-      profileId: "",
-      comment: "",
+      username: "user",
+      profileId: "8Y2ukpjj1bXbJqMdZe6z",
+      comment: "Nice Comment",
       createdAt: "2020-07-15T10:05:17.245Z",
+      userImage:
+        "https://firebasestorage.googleapis.com/v0/b/runstash-sg.appspot.com/o/4529455752.png?alt=media",
     },
   ],
   notifications: [
     {
-      recipient: "",
-      sender: "",
+      recipient: "user2",
+      sender: "user",
       read: "true | false",
-      profileId: "",
+      profileId: "8Y2ukpjj1bXbJqMdZe6z",
       type: "like | comment",
       createdAt: "2020-07-15T10:05:17.245Z",
+    },
+  ],
+  likes: [
+    {
+      profileId: "8Y2ukpjj1bXbJqMdZe6z",
+      username: "user",
     },
   ],
 };
@@ -45,23 +56,24 @@ let db = {
 const userDetails = {
   // Redux Data
   credentials: {
-    userId: "",
-    email: "",
-    username: "",
-    createdAt: "",
-    imageUrl: "",
-    bio: "",
-    website: "",
-    location: "",
+    userId: "ckZoFA5nyhSDkeT55ZktIRpmkPs1",
+    email: "user@gmail.com",
+    username: "user",
+    createdAt: "2020-07-16T08:36:55.599Z",
+    imageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/runstash-sg.appspot.com/o/4529455752.png?alt=media",
+    bio: "Hello I am user",
+    website: "http://user2.com.sg",
+    location: "Los Angeles, CA",
   },
   likes: [
     {
-      username: "user1",
-      profileId: "",
+      username: "user",
+      profileId: "8Y2ukpjj1bXbJqMdZe6z",
     },
     {
-      username: "user1",
-      profileId: "",
+      username: "user2",
+      profileId: "wz7zdO1DWIOVCpBlYSzz",
     },
   ],
 };
