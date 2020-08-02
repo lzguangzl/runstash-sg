@@ -98,6 +98,7 @@ const getUserDetails = (req, res) => {
           createdAt: doc.data().createdAt,
           likeCount: doc.data().likeCount,
           commentCount: doc.data().commentCount,
+          userImage: doc.data().userImage,
           profileId: doc.id,
         });
       });

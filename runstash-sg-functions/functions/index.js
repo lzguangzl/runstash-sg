@@ -1,5 +1,6 @@
 const functions = require("firebase-functions");
 const express = require("express");
+const cors = require("cors");
 const {
   getAllProfiles,
   postOneProfile,
@@ -21,6 +22,9 @@ const { db } = require("./util/admin");
 
 const app = express();
 
+// Cors
+app.use(cors());
+
 // Auth route
 app.post("/signup", signup);
 app.post("/login", login);
@@ -39,7 +43,7 @@ app.post("/user/image", FBAuth, uploadImage);
 app.post("/user", FBAuth, addUserDetails);
 app.get("/user", FBAuth, getAuthenticatedUser);
 app.get("/user/:username", getUserDetails);
-app.get("/notifications", FBAuth, markNotificationsRead);
+app.post("/notifications", FBAuth, markNotificationsRead);
 
 // Create notification on like event
 const createNotificationOnLike = functions.firestore

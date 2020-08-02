@@ -1,21 +1,85 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# RunStash Client
 
-## Available Scripts
+## Purpose of the project
 
-In the project directory, you can run:
+To keep track of my running data
+
+## Project setup
+
+This project is created using [React](https://reactjs.org/) with [Create React App](https://github.com/facebook/create-react-app)
+
+Language
+
+- JavaScript
+- Node.js
+- HTML
+- CSS
+
+Dependencies
+
+- material-ui
+- axios
+- dayjs
+- jwt-decode
+- react-router-dom
+- react-redux
+- redux
+- redux-thunk
+
+## Pre-requisites
+
+[Material-UI](https://material-ui.com/)
+
+```
+Material-UI is an open-source project that features React components that implement Google's Material Design.
+
+Material-UI is a very solid and stable set of react components that looks appealing and easy to use and customize.
+```
+
+[axios](https://github.com/axios/axios)
+
+```
+Axios is a popular, promise-based HTTP client that supports an easy-to-use API.
+```
+
+[dayjs](https://github.com/iamkun/dayjs)
+
+```
+Day.js is a minimalist JavaScript library that parses, validates, manipulates, and displays dates and times for modern browsers with a largely Moment.js-compatible API.
+```
+
+[jwt-decode](https://github.com/auth0/jwt-decode)
+
+```
+jwt-decode is a small browser library that helps decoding JWTs token which are Base64Url encoded.
+```
+
+[react-router-dom](https://reactrouter.com/web/guides/quick-start)
+
+```
+Router components for React application.
+```
+
+[redux](https://redux.js.org/)
+
+```
+Reudx is used mostly for application state management.
+```
+
+[redux-thunk](https://github.com/reduxjs/redux-thunk)
+
+```
+With a plain basic Redux store, you can only do simple synchronous updates by dispatching an action. Middleware extend the store's abilities, and let you write async logic that interacts with the store.
+
+Thunks are the recommended middleware for basic Redux side effects logic, including complex synchronous logic that needs access to the store, and simple async logic like AJAX requests.
+```
+
+## Setting up the project
 
 ### `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -27,42 +91,45 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Deploy and test
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The application is deployed on Firebase using [Firebase Hosting](https://firebase.google.com/docs/hosting/quickstart)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Install Firebase CLI
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+npm install -g firebase-tools
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. Log in and test the Firebase CLI
 
-## Learn More
+```
+firebase login
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Initialize the project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+firebase init
 
-### Code Splitting
+Firebase CLI prompts:
+- Select to set up Hosting.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- Select a Firebase project to connect to your local project directory.
 
-### Analyzing the Bundle Size
+- Specify a directory to use as your public root directory.
+Example:
+    i. What do you want to use as your public directory? build
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- Choose a configuration for your site
+Example:
+    i. Configure as a single-page app (rewrite all urls to /index.html)? Yes
+    ii. File build/index.html already exists. Overwrite? No
 
-### Making a Progressive Web App
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+4. Deploy the site
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```
+firebase deploy
+```

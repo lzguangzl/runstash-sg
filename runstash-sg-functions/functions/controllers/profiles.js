@@ -22,6 +22,9 @@ const getAllProfiles = (req, res) => {
 
 // Post one profile
 const postOneProfile = (req, res) => {
+  if (req.body.distance.trim() === "") {
+    return res.status(400).json({ distance: "Must not be empty" });
+  }
   const newProfile = {
     username: req.user.username,
     date: new Date().toISOString(),
